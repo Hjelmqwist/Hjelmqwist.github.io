@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitional//EN" "http://www.w3.org/pylon/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body, html
+
+{width: 100%; height: 100%; background-color: #000; overflow: hidden;}
+
+div{ width: 100%; height:100%;}
+
+#hal{display:block; position: absolute; width: 36vw; height: 36vw; top: 0; right: 0; bottom: 15%; left: 0; margin: auto; background-image: url(img/hal.png); opacity: 0.7; background-size: contain; background-repeat:no-repeat; z-index:1;}
+
+h1{display: block; position:absolute; width: 100%; bottom: 7%; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size: 4vw; color:#F00; z-index:2;}
+
+a{display: block; position:absolute; width: 100%; bottom: 5%; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size: 2vw; color:#F00; z-index:2;}
+
+@-webkit-keyframes Pulse {
+  from { background-color: #000; -webkit-box-shadow: 0 0 9px #000; }
+  50% { background-color: #000; -webkit-box-shadow: 0 0 18px #000; }
+  to { background-color: #F00; -webkit-box-shadow: 0 0 9px #000; }
+}
+
+#halpulse {
+  -webkit-animation-name: Pulse;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  display: block; 
+  position: absolute; 
+  width: 27vw; 
+  height: 27vw; 
+  top: 0; 
+  right: 0; 
+  bottom: 15%; 
+  left: 0; 
+  margin: auto;
+  z-index:0;
+  background-color:#FFF;
+  border-radius: 50%;
+  
+}
+</style>
+
+<title>404 - Page Not Found</title>
+
+
+</head>
+
+<body>
+
+<div>
+<div id="halpulse"></div>
+<div id="hal">
+</div>
+<h1>404... I'm sorry, Dave. I'm afraid I can't do that.</h1>
+<a href="index.html">Open the pod bay doors</a>
+</div>
+
+</body>
+</html>
