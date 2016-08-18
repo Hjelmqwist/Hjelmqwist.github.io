@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="space">
-  <div id="moon"> <a id="stereomc"></a> <a id="pylon"></a> <a id="R2D2"></a> <a id="UO" target="_blank" href="file:///Users/hjelmqwist/Desktop/iGoMoon/file/Alexander-Hjelmqwist.pdf"></a> <a id="sleepingsatellite"></a> <a id="moonrocket"></a> <a title="About Alexander" id="moonman"></a> <a id="flag" href="https://www.igomoon.com/" target="_blank"></a> <a id="darkside"></a> </div>
+  <div id="moon"> <a id="stereomc"></a> <a id="pylon"></a> <a id="R2D2"></a> <a id="UO" target="_blank" href="file/Alexander-Hjelmqwist.pdf"></a> <a id="sleepingsatellite"></a> <a id="moonrocket"></a> <a title="About Alexander" id="moonman"></a> <a id="flag" href="https://www.igomoon.com/" target="_blank"></a> <a id="darkside"></a> </div>
   <div class="info" id="info"> <a id="x"></a>
     <h1>Welcome To My Moon</h1>
     <p>This page is the result of a collaboration with "my inner nerdiness" around the concept of going to the moon. The page is highly influensed by my nostalgic and childish mindset and I wanted it to be as simple as an old picture book for kids. I hope it transcends that "Less" can be more but also that underneath there can be a more complex world filled with fun and inspiration.<br/>
@@ -373,8 +373,1379 @@
   </div>
   <div id="CSS" class="tabcontent">
   <textarea readonly>
+@charset 'UTF-8';
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+spylonike,
+spylonong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+r2d2,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+pylon,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video
+{
+    font: inherit;
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+}
+html,
+body
+{
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+a:link,
+a:visited
+{
+    text-decoration: none;
+
+    color: #333;
+}
+a:hover,
+a:active,
+a:focus
+{
+    text-decoration: none;
+}
+button:focus
+{
+    outline: 0;
+}
+img,
+object,
+embed,
+video
+{
+    max-width: 100%;
+}
+#space
+{
+    position: relative;
+    z-index: 0;
+
+    width: 100%;
+    height: 95%;
+
+    background-image: url(img/sky.jpg);
+    background-size: cover;
+}
+#moon
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 40%;
+    left: 0;
+
+    width: 15vw;
+    height: 15vw;
+    margin: auto;
+
+    -webkit-transform: rotate(64deg);
+        -ms-transform: rotate(64deg);
+            transform: rotate(64deg);
+
+    background-image: url(img/moon.png);
+    background-size: cover;
+}
+#moon a:hover
+{
+    -webkit-filter: drop-shadow(3px 2px 0 CornflowerBlue) drop-shadow(-1px -1px 0 CornflowerBlue);
+            filter: drop-shadow(3px 2px 0 CornflowerBlue) drop-shadow(-1px -1px 0 CornflowerBlue);
+}
+#stereomc
+{
+    position: absolute;
+    z-index: 3;
+    top: 71%;
+    right: -62%;
+    bottom: 0 ;
+    left: 0 ;
+
+    display: none;
+
+    width: 25%;
+    height: 25%;
+    margin: auto;
+
+    cursor: zoom-in;
+    -webkit-transform: rotate(141deg);
+        -ms-transform: rotate(141deg);
+            transform: rotate(141deg);
+
+    background-image: url(img/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#pylon
+{
+    position: absolute;
+    z-index: 3;
+    top: -111%;
+    right: 0;
+    bottom: 0;
+    left: 5%;
+
+    display: none;
+
+    width: 27%;
+    height: 27%;
+    margin: auto;
+
+    cursor: zoom-in;
+    -webkit-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+            transform: rotate(2deg);
+
+    background-image: url(img/pylon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#R2D2
+{
+    position: absolute;
+    z-index: 3;
+    top: 0 ;
+    right: 0 ;
+    bottom: 74%;
+    left: -59%;
+
+    display: none;
+
+    width: 22%;
+    height: 22%;
+    margin: auto;
+
+    cursor: zoom-in;
+    -webkit-transform: rotate(-64deg);
+        -ms-transform: rotate(-64deg);
+            transform: rotate(-64deg);
+
+    background-image: url(img/R2D2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#UO
+{
+    position: absolute;
+    z-index: 3;
+    top: 2% ;
+    right: 26% ;
+    bottom: 0% ;
+    left: 0 ;
+
+    display: none;
+
+    width: 26%;
+    height: 26%;
+    margin: auto;
+
+    -webkit-transform: rotate(-70deg);
+        -ms-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+
+    background-image: url(img/cap.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#sleepingsatellite
+{
+    position: absolute;
+    z-index: 4	;
+    top: 0 ;
+    right: -98%;
+    bottom: 86%;
+    left: 0 ;
+
+    display: none;
+
+    width: 48%;
+    height: 48%;
+    margin: auto;
+
+    cursor: zoom-in;
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg);
+
+    background-image: url(img/satellite.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#moonrocket
+{
+    position: absolute;
+    z-index: 3;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: -117%;
+
+    display: none;
+
+    width: 27%;
+    height: 27%;
+    margin: auto;
+
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+
+    background-image: url(img/rocket.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#moonman
+{
+    position: absolute;
+    z-index: 3;
+    top: -30%;
+    right: 0;
+    bottom: 0;
+    left: -106%;
+
+    display: none;
+
+    width: 18%;
+    height: 18%;
+    margin: auto;
+
+    cursor: zoom-in;
+    -webkit-transform: rotate(-64deg);
+        -ms-transform: rotate(-64deg);
+            transform: rotate(-64deg);
+
+    background-image: url(img/guy.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#flag
+{
+    position: absolute;
+    z-index: 3;
+    top: -62%;
+    right: 0;
+    bottom: 0;
+    left: -105%;
+
+    display: none;
+
+    width: 22%;
+    height: 22%;
+    margin: auto;
+
+    -webkit-transform: rotate(-59deg);
+        -ms-transform: rotate(-59deg);
+            transform: rotate(-59deg);
+
+    background-image: url(img/flag.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#darkside
+{
+    position: absolute;
+    z-index: 3;
+    top: 0 ;
+    right: 48% ;
+    bottom: -90% ;
+    left: 0 ;
+
+    opacity: 0;
+	animation: Force 8s 30s;
+       -moz-animation: Force  8s 30s;
+    -webkit-animation: Force 8s 30s;
+         -o-animation: Force 8s 30s; 
+
+    width: 40%;
+    height: 40%;
+    margin: auto;
+
+    -webkit-transform: rotate(-64deg);
+        -ms-transform: rotate(-64deg);
+            transform: rotate(-64deg);
+
+    background-image: url(img/shuttle.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.luna
+{
+    display: block;
+
+    cursor: zoom-out !important;
+
+    background-image: url(img/moon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.info
+{
+    position: absolute;
+    z-index: 5;
+    top: 5%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+    overflow: scroll;
+
+    width: 35%;
+    height: 85%;
+    margin: auto;
+
+    background-color: rgba(56,126,191,.7);
+}
+.info h1
+{
+    font-family: 'Century Gothic',CenturyGothic,AppleGothic,sans-serif;
+    font-size: 1.5vw;
+
+    padding-top: 5%;
+
+    text-align: center;
+
+    color: #fff;
+}
+.info h2
+{
+    font-family: 'Century Gothic',CenturyGothic,AppleGothic,sans-serif;
+    font-size: 1.3vw;
+
+    padding-top: 2%;
+    padding-left: 7%;
+
+    text-align: left;
+
+    color: #fff;
+}
+.info p
+{
+    font-family: 'Century Gothic',CenturyGothic,AppleGothic,sans-serif;
+    font-size: 1.2vw;
+
+    padding-top: 7%;
+    padding-right: 7%;
+    padding-left: 7%;
+
+    text-align: left;
+
+    color: #fff;
+}
+.info img
+{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 5vw;
+    height: auto;
+    margin: auto;
+    padding-top: 5%;
+}
+#x:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+
+    width: 3vw;
+    height: auto;
+    margin: auto;
+    padding-top: .2em;
+
+    content: '\f135';
+
+    opacity: .9;
+    color: #fff;
+}
+#x:hover
+{
+    cursor: zoom-out;
+}
+#maddskillz
+{
+    position: relative;
+    z-index: 4;
+
+    display: none;
+
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 0;
+}
+#cashaley
+{
+    position: absolute;
+
+    width: 8vw !important;
+    height: 8vw;
+    margin-top: 3% !important;
+    margin-right: auto !important;
+    margin-bottom: 3%;
+    margin-left: auto;
+}
+#maddskillz a
+{
+    font-family: 'Droid Sans', arial, verdana, sans-serif;
+    font-weight: 700;
+
+    top: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+
+    width: 15%;
+    margin: auto;
+
+    text-align: center;
+
+    color: rgba(204,255,51,1);
+}
+#maddskillz h2
+{
+    font-family: 'Droid Sans', arial, verdana, sans-serif;
+    font-weight: 700;
+
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 5%;
+    margin-bottom: 2%;
+
+    text-align: center;
+
+    color: #4ee !important;
+    color: rgba(255,255,255,.6);
+}
+#maddskillz table
+{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 90%;
+    max-height: 90%;
+    margin: auto;
+    margin-top: 5%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    color: rgba(255,255,255,1);
+}
+#maddskillz th
+{font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
+    font-size: 100%;
+
+    width: 14%;
+    padding: 1%;
+
+    text-align: center;
+
+    color: rgba(255,0,204,1);;
+}
+#maddskillz td
+{font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
+    font-size: 100%;
+
+    width: 14%;
+    padding: 1%;
+
+    text-align: center;;
+}
+#frontend
+{
+    width: 100%;
+    padding-top: 10%;
+}
+#code
+{
+    float: left;
+
+    width: 46%;
+    height: 35%;
+    margin: 2%;
+}
+.check-html:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '\f13b';
+
+    color: rgba(255,255,255,1);
+}
+.check-css:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '\f13c';
+
+    color: rgba(255,255,255,1);
+}
+.check-js:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '\f1cc';
+
+    color: rgba(255,255,255,1);
+}
+.check-php:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '<?';
+
+    color: rgba(255,255,255,1);
+}
+#design
+{
+    float: left;
+
+    width: 46%;
+    height: 35%;
+    margin: 2%;
+}
+#ps
+{
+    background-image: url(img/ps.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.check-ps:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '\f1c5';
+
+    color: rgba(255,255,255,1);
+}
+#ai
+{
+    background-image: url(img/ai.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.check-ai:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '\f040';
+
+    color: rgba(255,255,255,1);
+}
+#id
+{
+    background-image: url(img/id.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.check-id:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '\f0c5';
+
+    color: rgba(255,255,255,1);
+}
+#dw
+{
+    background-image: url(img/dw.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.check-dw:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '\f1c9';
+
+    color: rgba(255,255,255,1);
+}
+#sk
+{
+    background-image: url(img/sk.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.check-sk:before
+{
+    font-family: FontAwesome;
+    font-size: 150%;
+
+    content: '\f219';
+
+    color: rgba(255,255,255,1);
+}
+#greatgiginthesky
+{
+    position: relative;
+    z-index: 4;
+
+    display: none;
+
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+#semisonic
+{
+    position: relative;
+    top: 3%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 8vw;
+    height: 8vw;
+    margin: auto;
+
+    cursor: zoom-out !important;
+    transition: .3s;
+
+    color: rgba(255,255,255,.7);
+    background-image: url(img/moon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#greatgiginthesky iframe
+{
+    position: absolute;
+    top: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+
+    max-width: 95%;
+    height: 70%;
+    margin: auto;
+    margin-top: 20%;
+
+    opacity: .85;
+}
+#greatgiginthesky h1
+{
+    font-family: 'Droid Sans', arial, verdana, sans-serif;
+    font-weight: 700;
+
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+    height: 5%;
+    margin-top: 4.5%;
+
+    text-align: center;
+
+    color: #4ee !important;
+    color: rgba(255,255,255,.6);
+}
+#major-tom
+{
+    position: relative;
+    z-index: 4;
+
+    display: none;
+
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 0;
+}
+#groundcontrol
+{
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 8vw;
+    height: 8vw;
+    margin: auto;
+
+    cursor: zoom-out !important;
+    transition: .3s;
+
+    color: rgba(255,255,255,.7);
+    background-image: url(img/moon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.form
+{
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+
+    position: relative;
+
+    width: 30%;
+    height: 55%;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1%;
+
+    color: #fff;
+    border: solid;
+    border-color: rgba(0,51,102,1);
+    border-radius: 5%;
+    background-color: rgba(102,102,102,.7);
+}
+input
+{
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+
+    display: inline-block;
+
+    width: 90%;
+    padding-left: .5em;
+
+    transition: .5s ease-in-out;
+
+    color: #000;
+    border: solid;
+    border-color: rgba(0,102,153,.7);
+    background-color: rgba(218,222,245,1);
+}
+input:hover
+{
+    border-color: rgba(0,102,153,1);
+    background-color: #fff;
+}
+.form textarea
+{
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+
+    width: 90%;
+    padding-top: .5em;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: .5em;
+
+    transition: .5s ease-in-out;
+
+    border: solid;
+    border-color: rgba(0,102,153,.7);
+    background-color: rgba(218,222,245,1);
+}
+.form textarea:hover
+{
+    border-color: rgba(0,102,153,1);
+    background-color: #fff;
+}
+.form-name
+{
+    display: block;
+
+    width: 100%;
+}
+.nameFirst
+{
+    margin-top: 1%;
+}
+.nameLast
+{
+    margin-top: 1%;
+}
+.form span
+{
+    display: block;
+
+    padding-left: .5em;
+}
+.form-email
+{
+    display: block;
+
+    margin-top: 3%;
+}
+.email
+{
+    display: block;
+
+    padding-left: .5em;
+}
+.form-text
+{
+    margin-top: 1%;
+    padding-left: .5em;
+}
+.form-submit
+{
+    display: block;
+
+    width: 30%;
+    margin-top: 3%;
+    padding-left: .5em;
+}
+#behindthescene
+{
+    position: absolute;
+    z-index: 4;
+
+    display: none;
+
+    width: 90%;
+    height: 70%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+ul.tab
+{
+    width: 100%;
+    padding-bottom: 4%;
+}
+ul.tab li
+{
+    float: left;
+
+    list-style-type: none;
+}
+ul.tab li a
+{
+    font-size: 17px;
+
+    display: block;
+    float: left;
+
+    padding: 14px 16px;
+
+    transition: .3s;
+    text-align: center;
+    text-decoration: none;
+
+    color: rgba(255,255,255,.7);
+}
+ul.tab li a:hover
+{
+    color: rgba(0,2,14,.7);
+    background-color: #ddd;
+}
+ul.tab li a:focus,
+.active
+{
+    color: rgba(0,2,14,.7);
+    background-color: #ccc;
+}
+#B2D2
+{
+    float: right;
+
+    padding: 20px 20px;
+}
+#choice
+{
+    font-family: 'Droid Sans', arial, verdana, sans-serif;
+    font-weight: 400;
+
+    position: absolute;
+    z-index: 4;
+
+    width: 100%;
+    height: 5%;
+    margin-top: 3%;
+    padding-left: 2%;
+
+    color: #4ee !important;
+    color: rgba(255,255,255,.6);
+}
+.tabcontent
+{
+    z-index: 4;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+}
+.tabcontent textarea
+{
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+    background-color: rgba(102,102,102,.5);
+}
+#sidious
+{
+    position: absolute;
+    z-index: 2;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,.6);
+}
+#sinatra
+{
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 64%;
+
+    width: 18%;
+    height: 9%;
+    margin: auto;
+
+    -webkit-transform: rotate(27deg);
+        -ms-transform: rotate(27deg);
+            transform: rotate(27deg);
+    -webkit-animation-name: Pulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+
+    background-image: url(img/fly2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#sinatra:hover
+{
+    cursor: nw-resize;
+
+    color: #ccc;
+    background-image: url(img/fly2white.png);
+}
+#rocketman
+{
+    position: absolute;
+    z-index: 2;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 60%;
+
+    width: 45px;
+    height: 100px;
+    margin: auto;
+
+    background-image: url(img/guy.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#rocket
+{
+    position: absolute;
+    z-index: 3;
+    top: auto ;
+    right: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+
+    width: 130px;
+    height: 180px;
+    margin: auto;
+
+    cursor: n-resize;
+
+    background-image: url(img/rocket.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#supermario
+{
+    position: static;
+    z-index: 1;
+
+    width: 100%;
+    height: 30px;
+    padding-top: 0;
+
+    background-image: url(img/ground1.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: contain;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
 
+@keyframes Pulse {
+from
+    {
+        background-image: url(img/fly2.png);
+    }
+    50%
+    {
+        background-image: url(img/fly2.png);
+    }
+    to
+    {
+        background-image: url(img/fly2white.png);
+    }
+}
+
+@-moz-keyframes Pulse {
+from
+    {
+        background-image: url(img/fly2.png);
+    }
+    50%
+    {
+        background-image: url(img/fly2.png);
+    }
+    to
+    {
+        background-image: url(img/fly2white.png);
+    }
+}
+
+@-webkit-keyframes Pulse {
+from
+    {
+        background-image: url(img/fly2.png);
+    }
+    50%
+    {
+        background-image: url(img/fly2.png);
+    }
+    to
+    {
+        background-image: url(img/fly2white.png);
+    }
+}
+
+@-o-keyframes Pulse {
+from
+    {
+        background-image: url(img/fly2.png);
+    }
+    50%
+    {
+        background-image: url(img/fly2.png);
+    }
+    to
+    {
+        background-image: url(img/fly2white.png);
+    }
+}
+@-webkit-keyframes Pulse
+{
+    from
+    {
+        background-image: url(img/fly2.png);
+    }
+    50%
+    {
+        background-image: url(img/fly2.png);
+    }
+    to
+    {
+        background-image: url(img/fly2white.png);
+    }
+}
+@keyframes Force {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes Force {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    A100% { opacity: 0; }
+}
+
+@-webkit-keyframes Force {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes Force {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@media only screen and (max-width: 768px)
+{
+    #moon
+    {
+        width: 22vw;
+        height: 22vw;
+    }
+    #sleepingsatellite
+    {
+        right: -113%;
+        bottom: 29%;
+    }
+    #groundcontrol
+    {
+        width: 10vw;
+        height: 10vw;
+    }
+    #behindthescene
+    {
+        height: 75%;
+    }
+    .info
+    {
+        width: 65%;
+    }
+    .info h1
+    {
+        font-size: 3.5vw;
+    }
+    .info p
+    {
+        font-size: 1.8vw;
+    }
+    .info img
+    {
+        width: 13%;
+        height: 13%;
+    }
+    .form
+    {
+        width: 45%;
+        height: 56%;
+        margin-top: 8%;
+    }
+    ul.tab
+    {
+        padding-bottom: 16%;
+    }
+    #code
+    {
+        float: left;
+
+        width: 100%;
+        height: 35%;
+        margin: 2%;
+    }
+    #design
+    {
+        float: left;
+
+        width: 100%;
+        height: 35%;
+        margin: 2%;
+    }
+    #sinatra
+    {
+        width: 25%;
+        height: 10%;
+
+        -webkit-transform: rotate(43deg);
+            -ms-transform: rotate(43deg);
+                transform: rotate(43deg);
+    }
+}
+
+@media only screen and (max-width: 520px)
+{
+    #supermario
+    {
+        background-size: cover;
+    }
+    #behindthescene
+    {
+        height: 80%;
+    }
+    .info
+    {
+        width: 80%;
+    }
+    .info h1
+    {
+        font-size: 5.0vw;
+    }
+    .info p
+    {
+        font-size: 3.0vw;
+    }
+    .info img
+    {
+        width: 15%;
+        height: 15%;
+    }
+    #sinatra
+    {
+        width: 32%;
+        height: 10%;
+
+        -webkit-transform: rotate(48deg);
+            -ms-transform: rotate(48deg);
+                transform: rotate(48deg);
+    }
+    #rocket
+    {
+        width: 28%;
+        height: 26%;
+    }
+    #rocketman
+    {
+        width: 10%;
+        height: 15%;
+    }
+    #moon
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+    #groundcontrol
+    {
+        width: 20vw;
+        height: 20vw;
+    }
+    .form
+    {
+        width: 60%;
+        height: 50%;
+        margin-top: 16%;
+    }
+    ul.tab
+    {
+        padding-bottom: 16%;
+    }
+    tbody
+    {
+        max-width: 90%;
+    }
+    th
+    {
+        font-size: 2.3vw !important;
+    }
+    th
+    {
+        padding: 4% !important;
+    }
+}
 	</textarea>
   </div>
   <div id="JS" class="tabcontent">
